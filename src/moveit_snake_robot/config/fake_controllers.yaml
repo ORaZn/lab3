@@ -1,0 +1,15 @@
+controller_list:
+  - name: fake_snake_body_controller
+    joints:
+      - motortom2m
+      - joint2
+      - joint4
+      - joint6
+  - name: fake_snake_end_controller
+    joints:
+      - end
+initial:  # Define initial robot poses.
+  - group: snake_body
+    pose: snake_home_pose
+  - group: snake_end
+    pose: snake_home_pose_end
